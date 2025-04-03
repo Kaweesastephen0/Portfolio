@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The CodeMaster | Web Developer & Designer</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .img{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+     
+    }
+    .one{
+      width: 70%;
+       height: 80%;
+       margin-top: 100px;
+       border-radius: 5%;
+       background-color: rgba(255, 255, 255, 0.324);
+       border-color: 5px solid white;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">The CodeMaster</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+ <main>
+  <section id="home">
+    <canvas id="bg"></canvas>
+    <div class="hero-content">
+     <div class="one"> 
+      <img class="img" src="img/My-img1.jpg" alt="">
+      <h1>The CodeMaster</h1>
+      <p>Web Developer & Designer</p>
+      <a href="#projects" class="cta-btn">View My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1600" alt="E-commerce Project">
+        <h3>E-commerce Platform</h3>
+        <p>A full-featured online shopping platform with cart and checkout.</p>
+        <div class="project-links">
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1600" alt="Portfolio Website">
+        <h3>Portfolio Website</h3>
+        <p>Modern portfolio with 3D animations and smooth transitions.</p>
+        <div class="project-links">
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1600" alt="Task Manager">
+        <h3>Task Manager</h3>
+        <p>A drag-and-drop task management application.</p>
+        <div class="project-links">
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Expertise</h2>
+    <div class="skills-container">
+      <div class="skill-category">
+        <h3>Frontend</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Three.js</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Backend</h3>
+        <ul>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+          <li>PostgreSQL</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Design</h3>
+        <ul>
+          <li>Figma</li>
+          <li>Adobe XD</li>
+          <li>Photoshop</li>
+          <li>Illustrator</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <div class="contact-content">
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" required></textarea>
+        </div>
+        <button type="submit" class="cta-btn">Send Message</button>
+      </form>
+  </div>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="mailto:john@example.com">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
